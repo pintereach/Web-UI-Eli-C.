@@ -1,0 +1,51 @@
+header{
+    display: moz-flex;
+    display: -webkit-flex;
+    display: flex;
+
+    margin: 2rem 0 2rem 0;
+    
+*{
+    flex: 1;
+    margin-bottom: 0;
+}
+.icons{
+   
+    text-align: right;
+    font-size: 2rem;
+}
+.logo{
+    text-decoration: none;
+    border-bottom: 0;
+    color: @fg-bold;
+    font-family: "Roboto slab", serif;
+    font-size: 1.5rem;
+}
+padding-bottom: 1rem;
+border-bottom: .3rem solid @accent;
+}
+ul.icons{
+    cursor: default;
+    list-style: none;
+    padding-left: 0;
+
+    li{
+
+        
+         display: inline-block;
+        padding: 0 0rem 0 0;
+        a{
+            text-decoration: none;
+        }
+        &:last-child{
+            padding-right: 0;
+        }
+
+        .icon {
+            color: @fg-bold;
+            margin-left: 2rem;
+        }
+
+
+    }
+}
