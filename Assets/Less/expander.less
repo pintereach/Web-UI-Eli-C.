@@ -1,0 +1,78 @@
+.expanders {
+  margin-top: 5rem;
+  width: 100%;
+  h4 {
+    font-size: 2rem;
+  }
+}
+.expander {
+  @media (max-width: 270px) {
+    height: 10rem;
+  }
+
+  .split {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    h2 {
+      justify-content: flex-start;
+      margin-bottom: 2rem;
+    }
+
+    .expandButton {
+      align-content: flex-end;
+      padding: 2rem 3rem 2rem 3rem;
+    }
+  }
+  box-shadow: 2px 2px 2px @accent;
+  overflow: hidden;
+  height: 6rem;
+  position: relative;
+  background-color: white;
+  border-radius: 10px;
+  border: 2px solid @accent;
+  padding: 1rem 1rem 3rem 2rem;
+  margin: 2rem 10%;
+
+  h2 {
+    color: @fg-bold;
+    font-size: 2.5rem;
+    @media (max-width: 270px) {
+      font-size: 0.5rem;
+    }
+    @media (max-width: 370px) {
+      font-size: 1rem;
+    }
+    padding: 0;
+    margin: 1rem 0 0;
+  }
+  .close {
+    .expandButton {
+      bottom: 90%;
+      right: 2%;
+    }
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
+
+  .expandButton {
+    font-size: 1.5rem;
+    color: white;
+    padding: 0.3rem;
+    // border: 1px solid @accent;
+    .border-radius(3px);
+    cursor: pointer;
+   ;
+    background-color: @accent;
+  }
+}
+
+.article-open {
+  .expandButton {
+    position: absolute;
+    bottom: 85%;
+    right: 2%;
+  }
+  height: 40rem;
+}
