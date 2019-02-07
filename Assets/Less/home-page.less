@@ -1,3 +1,12 @@
+
+.topBar{
+
+    color:@fg-bold
+}
+
+
+
+
 #banner{
     display: flex;
     flex-direction: column-reverse;
@@ -32,7 +41,9 @@
 
 }
 
+
 #about{
+    color: @fg-bold;
     margin: 2rem 0 2rem 0;
     border-bottom: 1px solid @border;
     padding-bottom: 2rem;
@@ -64,3 +75,23 @@
         }
     }
 }
+
+
+
+footer{
+    .flex(center,center);
+    p{
+        margin: 1rem;
+        color: @fg-light;
+        font-size: 2rem;
+    }
+}
+
+#gallery li {
+    display: inline;
+    margin-right: 3px;
+    }
+  #gallery #main-img {
+    background: url(images/bg_img.png) no-repeat 0 0;
+    padding: 26px;
+    }
