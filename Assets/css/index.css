@@ -7,7 +7,6 @@
   color: #f56a6a;
   cursor: pointer;
   display: inline-block;
-  font-size: 1.2rem;
   height: 5rem;
   line-height: 5rem;
   padding: 0 5rem;
@@ -17,11 +16,9 @@
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 .button a {
+  font-size: 1.5rem;
   text-decoration: none;
   color: #f56a6a;
-}
-.active {
-  z-index: 99;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -144,7 +141,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: '';
+  content: "";
   content: none;
 }
 table {
@@ -159,7 +156,7 @@ html {
 }
 html,
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 body #wrapper {
   margin: 0 3rem 0 3rem;
@@ -176,7 +173,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: 'Indie Flower', cursive;
+  font-family: "Indie Flower", cursive;
 }
 h1 {
   font-size: 4rem;
@@ -367,6 +364,39 @@ ul.icons li .icon {
   bottom: 85%;
   right: 2%;
 }
+#showContainer {
+  width: 55rem;
+  padding: 0;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+.navButton {
+  cursor: pointer;
+  float: left;
+  width: 25px;
+  height: 22px;
+  padding: 10px;
+  margin-right: 5px;
+  overflow: hidden;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  background: #000000;
+  opacity: 0.65;
+  user-select: none;
+}
+.navButton:hover {
+  opacity: 1;
+}
+.caption {
+  float: right;
+}
+.imageContainer:not(:first-child) {
+  /* Hide all images except the first */
+  display: none;
+}
 .topBar {
   color: #3d4449;
 }
@@ -415,6 +445,7 @@ ul.icons li .icon {
 }
 #about .features article {
   width: 100%;
+  font-size: 2rem;
   padding-bottom: 1.5rem;
 }
 @media (min-width: 800px) {
