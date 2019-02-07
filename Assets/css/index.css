@@ -318,7 +318,7 @@ ul.icons li .icon {
 }
 .expander .split .expandButton {
   align-content: flex-end;
-  padding: 1.5rem;
+  padding: 2rem 3rem 2rem 3rem;
 }
 .expander h2 {
   color: #3d4449;
@@ -353,7 +353,6 @@ ul.icons li .icon {
   -moz-border-radius: 3px;
   border-radius: 3px;
   cursor: pointer;
-  transform: translate(-50);
   background-color: #f56a6a;
 }
 .article-open {
@@ -425,6 +424,18 @@ ul.icons li .icon {
   border-radius: 5px;
   padding-bottom: 1rem;
 }
+@media (max-width: 500px) {
+  #banner img {
+    width: 50%;
+    height: 100%;
+  }
+}
+@media (max-width: 330px) {
+  #banner img {
+    width: 30%;
+    height: 100%;
+  }
+}
 #banner .content {
   height: 50%;
 }
@@ -482,6 +493,11 @@ footer p {
 #gallery #main-img {
   background: url(images/bg_img.png) no-repeat 0 0;
   padding: 26px;
+}
+#next {
+  width: 5rem;
+  height: 3rem;
+  background-color: #f56a6a;
 }
 .top-bar {
   width: 100%;

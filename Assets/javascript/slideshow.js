@@ -1,33 +1,29 @@
 $(document).ready(function() {
   $('#previous').on('click', function(){
     // Change to the previous image
-    $('#im_' + currentImage).stop().fadeOut(1);
+    $('#im_' + currentImage).stop().fadeOut(1000);
     decreaseImage();
-    $('#im_' + currentImage).stop().fadeIn(1);
+    $('#im_' + currentImage).stop().fadeIn(1000);
   }); 
   $('#next').on('click', function(){
     // Change to the next image
-    $('#im_' + currentImage).stop().fadeOut(1);
+    $('#im_' + currentImage).stop().fadeOut(100);
     increaseImage();
-    $('#im_' + currentImage).stop().fadeIn(1);
+    $('#im_' + currentImage).stop().fadeIn(1000);
   }); 
 
   var currentImage = 1;
-  var totalImages = 3;
+  var totalImages = 5;
 
   function increaseImage() {
-    /* Increase currentImage by 1.
-    * Resets to 1 if larger than totalImages
-    */
+   
     ++currentImage;
     if(currentImage > totalImages) {
       currentImage = 1;
     }
   }
   function decreaseImage() {
-    /* Decrease currentImage by 1.
-    * Resets to totalImages if smaller than 1
-    */
+  
     --currentImage;
     if(currentImage < 1) {
       currentImage = totalImages;
