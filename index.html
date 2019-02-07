@@ -9,7 +9,7 @@
          <link rel="stylesheet" href="Assets/css/index.css" />
          <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
          crossorigin="anonymous"></script>
-       <script src="/Assets/javascript/tabs.js" async></script>
+         <script src="Assets/javascript/expander.js" async></script>
     </head>
     <body>
         <div id="wrapper">        
@@ -17,7 +17,7 @@
             <div id="main">
                 <!-- Header -->
                 <header id="nav">
-                    <a href="index.html" class="logo"><strong id="logo">Pintareach</strong><h5> by Group xxxxxx</h5></a>
+                    <a href="index.html" class="logo"><h5><strong>Pintareach</strong> by Group xxxxxx</h5></a>
                     <ul class="icons">
                             <li><a href="#" class="icon fab fa-twitter"><span class="label"></span></a></li>
                             <li><a href="#" class="icon fab fa-facebook"><span class="label"></span></a></li>
@@ -42,7 +42,7 @@
                          <a href="Topics.html"><span>EXAMPLE</span></a>
                       </div>
                       <div class="container bar">
-                      <a href="https://thirsty-rosalind-e8d4b8.netlify.com/"><span>LOG IN</span></a>
+                        <span>LOG IN</span>
                       </div>
                     </div>
                   </div>
@@ -65,113 +65,96 @@
                     
                 </section>
                 <!-- Section -->
-                <div class="tabs">
-                        <div class="tabs-links">
-                            <div class="tabs-link tabs-link-selected" data-tab="1">About</div>
-                            <div class="tabs-link" data-tab="2">Reviews</div>
-                            <div class="tabs-link" data-tab="3">Trial</div>
-                            <div class="tabs-link" data-tab="4">contact</div>
+                <section id="about">
+                    <div class=" major">
+                        <h2> About </h2>
+                    </div>
+                    <div class = "features">
+                        <div id="first">
+                        <article>
+                                <span class="icon fas fa-gem"></span></a>
+                            <div class="content">
+                                <h3> some more text</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea maiores magnam nisi</p>                                
+                            </div>
+                        </article>
+                        <article>
+                                <span class="icon fas fa-paper-plane"></span>
+                                <div class="content">
+                                    <h3>Sapien veroeros</h3>
+                                    <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+                                </div>
+                            </article>
                         </div>
-                        <div class="tabs-items">
-                            <div class="tabs-item tabs-item-selected" data-tab="1">
-                                <div class="tabs-item-title">Pintereach</div>
-                                <div class="tabs-item-description">  <section id="about">
-                                        <div class=" major">
-                                           
-                                        </div>
-                                        <div class = "features">
-                                            <div id="first">
-                                            <article>
-                                                    <span class="icon fas fa-gem"></span></a>
-                                                <div class="content">
-                                                    <h3> some more text</h3>
-                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea maiores magnam nisi</p>                                
-                                                </div>
-                                            </article>
-                                            <article>
-                                                    <span class="icon fas fa-paper-plane"></span>
-                                                    <div class="content">
-                                                        <h3>Sapien veroeros</h3>
-                                                        <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-                                                    </div>
-                                                </article>
-                                            </div>
-                                            <div id="second">
-                                                <article>
-                                                    <span class="icon fas fa-rocket"></span>
-                                                    <div class="content">
-                                                        <h3>Quam lorem ipsum</h3>
-                                                        <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-                                                    </div>
-                                                </article>
-                                                <article>
-                                                    <span class="icon fas fa-signal"></span>
-                                                    <div class="content">
-                                                        <h3>Sed magna finibus</h3>
-                                                        <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-                                                    </div>
-                                                </article>
-                                                </div>
-                                            </div>
-                                     </section> </div>
+                        <div id="second">
+                            <article>
+                                <span class="icon fas fa-rocket"></span>
+                                <div class="content">
+                                    <h3>Quam lorem ipsum</h3>
+                                    <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+                                </div>
+                            </article>
+                            <article>
+                                <span class="icon fas fa-signal"></span>
+                                <div class="content">
+                                    <h3>Sed magna finibus</h3>
+                                    <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+                                </div>
+                            </article>
                             </div>
-                            <div class="tabs-item" data-tab="2">
-                                <div class="tabs-item-title">Reviews</div>
-                                <div class="tabs-item-description">
-                                    <p>
-                                    Fill With bs reviews; Curiously enough, the only thing that went through the mind of the bowl of petunias as it fell was Oh no, not again. Many
-                                    people have speculated that if we knew exactly why the bowl of petunias had thought that we would know a lot more about the
-                                    nature of the Universe than we do now.
-                                        </p>
-                                </div>
-                            </div>
-                            <div class="tabs-item" data-tab="3">
-                                <div class="tabs-item-title">Trial</div>
-                                <div class="tabs-item-description">
-
-                                    Inquire to learn more of our Trial
-
-                                    It is known that there are an infinite number of worlds, simply because there is an infinite amount of space for them to
-                                    be in. However, not every one of them is inhabited. Therefore, there must be a finite number of inhabited worlds. Any finite
-                                    number divided by infinity is as near to nothing as makes no odds, so the average population of all the planets in the Universe
-                                    can be said to be zero. From this it follows that the population of the whole Universe is also zero, and that any people
-                                    you may meet from time to time are merely the products of a deranged imagination.
-                                </div>
-                            </div>
-                            <div class="tabs-item" data-tab="4">
-                                <div class="tabs-item-title">Contact</div>
-                                <div class="tabs-item-description">   
-                                    <section id="contact">
-                                        <div class="major">
-                                            <h4>Get in touch</h4>
-                                        </div>
-                                        <p>Sed varius enim lorem ullamcorper dolore aliquam aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin sed aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-                                        <ul class="contact">
-                                            <li class="fa-envelope-o"><a href="#">information@untitled.tld</a></li>
-                                            <li class="fa-phone">(000) 000-0000</li>
-                                            <li class="fa-home">1234 Somewhere Road #8254<br />
-                                            Nashville, TN 00000-0000</li>
-                                        </ul>
-                                    </section>
-                
-                                </div>
-                            <!-- </div>
-                                <div class="tabs-item" data-tab="4">
-                                <div class="tabs-item-title">Quote 4</div>
-                                <div class="tabs-item-description">
-                                    There is a theory which states that if ever anyone discovers exactly what the Universe is for and why it is here, it will
-                                    instantly disappear and be replaced by something even more bizarre and inexplicable. There is another theory which states
-                                    that this has already happened.
-                                </div>
-                            </div> -->
-                            
                         </div>
-                
+                 </section>
                 <!--Section-->
-         
+
+                <section class="expanders">
+                        <div class="expander">
+                          <div class="split">
+                              <h2>Who We Are</h2>
+                                <span class='expandButton'></span>
+                            </div>
+                                <p> We are a group of software engineers who believe there should be an easier way to thoughtlessly save articles online, for you to read later. etc etc</p>
+                        </div>
+                 <div class="expanders">
+                    <div class="expander">
+                       <div class="split">
+                           <h2>Contact Us</h2>
+                            <span class='expandButton'></span>
+                        </div>
+                        <p>ibiki</p>
+                       <section id="contact">
+                        <div class="major">
+                            <h4>Get in touch</h4>
+                        </div>
+                        <p>Sed varius enim lorem ullamcorper dolore aliquam aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin sed aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+                        <ul class="contact">
+                            <li class="fa-envelope-o"><a href="#">information@untitled.tld</a></li>
+                            <li class="fa-phone">(000) 000-0000</li>
+                            <li class="fa-home">1234 Somewhere Road #8254<br />
+                            Nashville, TN 00000-0000</li>
+                        </ul>
+                    </section>
+                    </div>        
+                </section>
+                <div class="expanders">
+                        <div class="expander">
+                           <div class="split">
+                               <h2>Learn-More!</h2>
+                                <span class='expandButton'></span>
+                            </div>
+                            <p>ibiki</p>
+                         
+                        </div>        
+                    </section>
+
+
+                <!-- Section-->
+                  
+
                 <!-- Footer -->
-                    
-        
+                    <footer id="footer">
+                        <p class="copyright">Thank you for visiting</p>
+                    </footer>
+
                    
                 
             </div>

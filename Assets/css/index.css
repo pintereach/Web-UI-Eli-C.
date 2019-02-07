@@ -283,6 +283,83 @@ ul.icons li .icon {
 .tabs .tabs-link-selected:hover {
   background-color: white;
 }
+.expanders {
+  margin-top: 5rem;
+  width: 100%;
+}
+.expander {
+  box-shadow: 2px 2px 2px #f56a6a;
+  overflow: hidden;
+  height: 6rem;
+  position: relative;
+  background-color: white;
+  border-radius: 10px;
+  border: 2px solid #f56a6a;
+  padding: 1rem 1rem 3rem 2rem;
+  margin: 2rem 10%;
+}
+@media (max-width: 270px) {
+  .expander {
+    height: 10rem;
+  }
+}
+.expander .split {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.expander .split h2 {
+  justify-content: flex-start;
+  margin-bottom: 2rem;
+}
+.expander .split .expandButton {
+  align-content: flex-end;
+  padding: 1.5rem;
+}
+.expander h2 {
+  font-size: 2.5rem;
+  padding: 0;
+  margin: 1rem 0 0;
+}
+@media (max-width: 270px) {
+  .expander h2 {
+    font-size: 0.5rem;
+  }
+}
+@media (max-width: 370px) {
+  .expander h2 {
+    font-size: 1rem;
+  }
+}
+.expander .close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+.expander .close .expandButton {
+  bottom: 90%;
+  right: 2%;
+}
+.expander .expandButton {
+  font-size: 1.5rem;
+  color: #f56a6a;
+  padding: 0.3rem;
+  border: 1px solid #f56a6a;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  cursor: pointer;
+  transform: translate(-50);
+  background-color: white;
+}
+.article-open {
+  height: 40rem;
+}
+.article-open .expandButton {
+  position: absolute;
+  bottom: 85%;
+  right: 2%;
+}
 #banner {
   display: flex;
   flex-direction: column-reverse;
